@@ -2,6 +2,7 @@
 Documentation    Cenários de testes de pré-cadastro de clientes
 Resource    ../resources/Base.resource
 Test Setup    Start session
+Test Teardown    Take Screenshot
 
 *** Test Cases ***
 

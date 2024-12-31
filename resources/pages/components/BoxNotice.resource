@@ -14,3 +14,5 @@ Notice should be
     Get Text    css=form .notice    
     ...    equal    
     ...    ${target}
+    
+    Take Screenshot

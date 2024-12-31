@@ -2,6 +2,7 @@
 Documentation    Cenários de testes do login SAC
 Resource    ../resources/Base.resource
 Test Setup    Start session
+Test Teardown    Take Screenshot
 
 *** Test Cases ***
 Deve logar como Gestor de Academia    
