@@ -21,7 +21,6 @@ Não deve logar com e-mail não cadastrado
     Toast should be     As credenciais de acesso fornecidas são inválidas. Tente novamente!\n
 
 Tentativa de login com dados incorretos
-    [Tags]    log
     [Template]    Login with verify notice
     ${EMPTY}    ${EMPTY}            Os campos email e senha são obrigatórios.
     ${EMPTY}    pwd123              Os campos email e senha são obrigatórios.

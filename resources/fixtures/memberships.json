@@ -36,5 +36,43 @@
             "year": "2099",
             "cvv": "171"
         }
+    },
+    "search": {
+        "account": {
+            "name": "Geraldo Nascimento",
+            "email": "gnascimento@mailinator.com",
+            "cpf": "22702623018"
+        },
+        "plan": {
+            "name": "Plano Smart",
+            "id": "1",
+            "price":99.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Geraldo Nascimento",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        }
+    },
+    "delete": {
+        "account": {
+            "name": "Pedro Almeida",
+            "email": "palmeida@mailinator.com",
+            "cpf": "09644523083"
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": "1",
+            "price":79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Pedro Almeida",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        }
     }
 }

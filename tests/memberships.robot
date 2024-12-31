@@ -22,3 +22,12 @@ Não deve realizar adesão duplicada
     Go to Memberships    
     Create new membership    ${data}
     Toast should be    O usuário já possui matrícula.\n
+
+Deve buscar por nome
+    [Tags]    buscar
+    ${data}    Get Json fixture    memberships    search
+    Insert Membership    ${data}
+    Signin admin            
+    Go to Memberships
+    Search by name    ${data}[account][name]
+    Should filter by name    ${data}[account][name]
