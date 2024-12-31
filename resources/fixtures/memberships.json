@@ -13,5 +13,20 @@
             "year": "2099",
             "cvv": "171"
         }
+    },
+    "duplicate": {
+        "account": {
+            "name": "Marco Antônio de Souza",
+            "email": "masouza@mailinator.com",
+            "cpf": "00869568094"
+        },
+        "plan": "Plano Smart",
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Marco Antônio de Souza",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        }
     }
 }
