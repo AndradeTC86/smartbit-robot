@@ -16,13 +16,9 @@ Deve poder realizar uma nova adesão
     Toast should be    Matrícula cadastrada com sucesso.\n
 
 Não deve realizar adesão duplicada
-    [Tags]    dup
     ${data}    Get Json fixture    memberships    duplicate
-    Delete Account By Email    ${data}[account][email]
-    Insert Account             ${data}[account]
+    Insert Membership    ${data}
     Signin admin            
-    Go to Memberships
-    Create new membership    ${data}
-    Sleep    5
+    Go to Memberships    
     Create new membership    ${data}
     Toast should be    O usuário já possui matrícula.\n
