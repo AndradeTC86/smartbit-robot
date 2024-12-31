@@ -56,7 +56,7 @@
             "cvv": "171"
         }
     },
-    "delete": {
+    "remove": {
         "account": {
             "name": "Pedro Almeida",
             "email": "palmeida@mailinator.com",
@@ -64,7 +64,7 @@
         },
         "plan": {
             "name": "Plano Black",
-            "id": "1",
+            "id": "2",
             "price":79.99
         },
         "credit_card": {

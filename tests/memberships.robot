@@ -24,10 +24,19 @@ Não deve realizar adesão duplicada
     Toast should be    O usuário já possui matrícula.\n
 
 Deve buscar por nome
-    [Tags]    buscar
     ${data}    Get Json fixture    memberships    search
     Insert Membership    ${data}
     Signin admin            
     Go to Memberships
     Search by name    ${data}[account][name]
     Should filter by name    ${data}[account][name]
+
+Deve excluir uma matricula
+    [Tags]    remove
+    ${data}    Get Json fixture    memberships    remove
+    Insert Membership    ${data}
+    Signin admin            
+    Go to Memberships
+    Request removal by name    ${data}[account][name]
+    Confirm removal
+    Membership should not be visible    ${data}[account][name]
