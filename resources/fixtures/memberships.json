@@ -1,0 +1,17 @@
+{
+    "create": {
+        "account": {
+            "name": "Carlos de Oliveira",
+            "email": "coliveira@mailinator.com",
+            "cpf": "85565825083"
+        },
+        "plan": "Plano Black",
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Carlos de Oliveira",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        }
+    }
+}
