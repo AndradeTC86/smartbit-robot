@@ -4,10 +4,13 @@ Library    Browser
 
 *** Keywords ***
 
-Go to Memberships
-    Click    css=a[href="/memberships"]
-    Wait For Elements State    css=h1 >> text=Matrículas
-    ...    visible    5
+Create new membership
+    [Arguments]    ${data}
+    Go to memberships form
+    Select account    ${data}[account][name]    ${data}[account][cpf]
+    Select plan    ${data}[plan]
+    Fill payment card    ${data}[credit_card]
+    Click    css=button[type=submit] >> text=Cadastrar
 
 Go to memberships form
     Click    css=a[href="/memberships/new"]
@@ -31,7 +34,3 @@ Fill payment card
     Fill Text    css=input[name=card_month]     ${credit_card}[month]
     Fill Text    css=input[name=card_year]      ${credit_card}[year]
     Fill Text    css=input[name=card_cvv]       ${credit_card}[cvv]
-
-Click record button
-    Click    css=button[type=submit] >> text=Cadastrar
-

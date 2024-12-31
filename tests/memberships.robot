@@ -10,13 +10,7 @@ Deve poder realizar uma nova adesão
     ${data}    Get Json fixture    memberships    create
     Delete Account By Email    ${data}[account][email]
     Insert Account             ${data}[account]
-    Go to login page
-    Submit login form    sac@smartbit.com    pwd123
-    User is logged in    sac@smartbit.com
+    Signin admin            
     Go to Memberships
-    Go to memberships form
-    Select account    ${data}[account][name]    ${data}[account][cpf]
-    Select plan    ${data}[plan]
-    Fill payment card    ${data}[credit_card]
-    Click record button
+    Create new membership    ${data}
     Toast should be    Matrícula cadastrada com sucesso.\n
