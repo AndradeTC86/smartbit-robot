@@ -15,7 +15,7 @@ def execute(query):
     conn.close()
 
 def insert_account(account):
-    query = f"INSERT INTO accounts (name,email,cpf) VALUES ('{account["name"]}', '{account["email"]}', '{account["cpf"]}')"
+    query = f"INSERT INTO accounts (name,email,cpf) VALUES ('{account['name']}', '{account['email']}', '{account['cpf']}')"
     execute(query)
 
 def delete_account_by_email(email):
