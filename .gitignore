@@ -1,3 +1,3 @@
 logs/
 venv/
-resources/libs/__pycache__/
+web/resources/libs/__pycache__/
