@@ -37,9 +37,9 @@ O objetivo desse projeto é criar uma automação das versões Web, API e Mobile
 1. [Git](https://git-scm.com/) `git version 2.34.1`
 2. [Nodejs](https://nodejs.org/en/) `v20.14.0`
    *    NPM `10.8.1`
-   *    Yarn `1.22.22` (para habilitar ele no `corepack enable`)
+   *    Yarn `1.22.22`
 3. [Python](https://www.python.org/) `Python 3.10.12`
-4. [Robot Framework](https://robotframework.org/) `Robot Framework 7.0 (Python 3.10.12 on linux)`
+4. [Robot Framework](https://robotframework.org/) `Robot Framework 7.0`
 5. [Library Browser](https://github.com/MarketSquare/robotframework-browser)
 
 ### Setup inicial
