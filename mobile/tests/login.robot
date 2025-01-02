@@ -8,7 +8,9 @@ Test Teardown    Finish session
 *** Test Cases ***
 
 Deve logar com o IP e cpf
-    Signin with document    00000001406	    
+    ${data}    Get Json fixture    login
+    Insert Membership    ${data}
+    Signin with document    ${data}[account][cpf]	    
     User is logged in
 
 Não deve logar com cpf não cadastrado

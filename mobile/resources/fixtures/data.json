@@ -1,0 +1,21 @@
+{
+    "login": {
+        "account": {
+            "name": "Ana Maria de Oliveira",
+            "email": "amoliveira@mailinator.com",
+            "cpf": "63113218071"
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": "2",
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Ana Maria de Oliveira",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        }
+    }
+}

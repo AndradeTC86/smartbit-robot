@@ -1,6 +1,9 @@
 *** Settings ***
 Documentation    Arquivo principal do projeto de testes automatizados para Mobile
 Library    AppiumLibrary
+Library    ../../libs/Database.py
+Library    JSONLibrary
+
 Resource    ./actions/Login.resource
 Resource    ./actions/Account.resource
 Resource    ./actions/MyBody.resource
@@ -22,3 +25,11 @@ Start session
 Finish session
     Capture Page Screenshot
     Close Application
+
+Get Json fixture
+    [Arguments]    ${scenario}
+    ${data}    Load Json From File    
+    ...    ${EXECDIR}/resources/fixtures/data.json
+    ...    encoding=utf-8
+
+    [Return]    ${data}[${scenario}]

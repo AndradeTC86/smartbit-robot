@@ -18,16 +18,18 @@ O objetivo desse projeto é criar uma automação das versões Web, API e Mobile
 ## Estrutura do projeto
 
 ```
+|--- libs
 |--- mobile
 |----- app
 |----- resources
-|--------- actions
+|------- actions
+|--------- components
+|------- fixtures
 |----- tests
 |--- web
 |----- e2e
 |----- resources
 |------- fixtures
-|------- libs
 |------- pages
 |--------- components
 |----- sql
