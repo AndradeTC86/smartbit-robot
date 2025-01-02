@@ -1,6 +1,12 @@
 *** Settings ***
 Documentation    Arquivo principal do projeto de testes automatizados para Mobile
 Library    AppiumLibrary
+Resource    ./actions/Login.resource
+Resource    ./actions/Account.resource
+Resource    ./actions/MyBody.resource
+Resource    ./actions/components/Menu.resource
+Resource    ./actions/components/Popup.resource
+
 
 *** Keywords ***
 Start session
