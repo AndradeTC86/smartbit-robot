@@ -18,6 +18,11 @@ O objetivo desse projeto é criar uma automação das versões Web, API e Mobile
 ## Estrutura do projeto
 
 ```
+|--- mobile
+|----- app
+|----- resources
+|--------- actions
+|----- tests
 |--- web
 |----- e2e
 |----- resources
@@ -40,7 +45,6 @@ O objetivo desse projeto é criar uma automação das versões Web, API e Mobile
    *    Yarn `1.22.22`
 3. [Python](https://www.python.org/) `Python 3.10.12`
 4. [Robot Framework](https://robotframework.org/) `Robot Framework 7.0`
-5. [Library Browser](https://github.com/MarketSquare/robotframework-browser)
 
 ### Setup inicial
 
