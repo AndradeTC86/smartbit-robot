@@ -28,7 +28,7 @@ ${ADMIN_PASS}     pwd123
 *** Keywords ***
 
 Start session    
-    New Browser    browser=webkit    headless=False
+    New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Page        ${BASE_URL}
 
 Get Json fixture
