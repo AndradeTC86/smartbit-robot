@@ -26,8 +26,8 @@ O objetivo desse projeto é criar uma automação das versões Web, API e Mobile
 |--------- components
 |------- fixtures
 |----- tests
+|--- services
 |--- web
-|----- e2e
 |----- resources
 |------- fixtures
 |------- pages
