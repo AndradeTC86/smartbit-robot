@@ -9,6 +9,7 @@ Resource    ./actions/Account.resource
 Resource    ./actions/MyBody.resource
 Resource    ./actions/components/Menu.resource
 Resource    ./actions/components/Popup.resource
+Resource    ../../services/Service.resource
 
 
 *** Keywords ***
