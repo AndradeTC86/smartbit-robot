@@ -1,10 +1,15 @@
 import psycopg2
 
-db_conn = """
-        host='ep-misty-hill-a1e2wqk0.ap-southeast-1.aws.neon.tech'
-        dbname='smartbit'
-        user='smartbit_owner'
-        password='bZ5S4BjkztWw'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+db_conn = f"""
+        host='{os.getenv('DB_HOST')}'
+        dbname='{os.getenv('DB_NAME')}'
+        user='{os.getenv('DB_USER')}'
+        password='{os.getenv('DB_PASS')}'
         """
 
 def execute(query):
