@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ações e elementos da tela minha conta
+Documentation    Ações e elementos da tela Minha Conta
 Library    AppiumLibrary
 
 *** Keywords ***

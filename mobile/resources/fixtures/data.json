@@ -17,5 +17,28 @@
             "year": "2099",
             "cvv": "171"
         }
+    },
+    "update": {
+        "account": {
+            "name": "Júlio Cesar Gonçalves",
+            "email": "jcgoncalves@mailinator.com",
+            "cpf": "57296224061",
+            "weight":62,
+            "height":169
+        },
+        "plan": {
+            "name": "Plano Smart",
+            "id": "1",
+            "price": 99.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Júlio Cesar Gonçalves",
+            "month": "08",
+            "year": "2099",
+            "cvv": "171"
+        },
+        "weight":62,
+        "height":169
     }
 }
