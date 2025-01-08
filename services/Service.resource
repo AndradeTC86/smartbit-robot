@@ -11,7 +11,7 @@ Set user token
     ...    password=pwd123
     
     ${resp}    POST    
-    ...    url=${API_URL}sessions    
+    ...    url=${API_URL}/sessions    
     ...    json=${payload}
     
     ${token}    Set Variable    Bearer ${resp.json()}[token]
@@ -27,7 +27,7 @@ Get account by name
     ${params}    Create Dictionary    
     ...    name=${name}
 
-    ${resp}    GET    url=${API_URL}accounts   
+    ${resp}    GET    url=${API_URL}/accounts   
     ...    params=${params}
     ...    headers=${headers}
 

@@ -7,7 +7,7 @@ Variables    ../Env.py
 *** Keywords ***
 
 Go to login page
-    Go To    ${BASE_URL}login
+    Go To    ${BASE_URL}/login
 
 Submit login form
     [Arguments]    ${email}    ${password}

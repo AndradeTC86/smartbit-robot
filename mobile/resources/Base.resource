@@ -1,5 +1,7 @@
 *** Settings ***
 Documentation    Arquivo principal do projeto de testes automatizados para Mobile
+Variables   Env.py
+
 Library    AppiumLibrary
 Library    ../../libs/Database.py
 Library    JSONLibrary
@@ -15,11 +17,11 @@ Resource    ../../services/Service.resource
 *** Keywords ***
 Start session
     Open Application    http://localhost:4723    
-    ...    platformName=Android
-    ...    automationName=UIAutomator2
-    ...    deviceName=Emulator
-    ...    app=${EXECDIR}/app/smartbit-beta.apk
-    ...    autoGrantPermissions=true
+    ...    platformName=${PLATFORM_NAME}
+    ...    automationName=${AUTOMATION_NAME}
+    ...    deviceName=${DEVICE_NAME}
+    ...    app=${EXECDIR}/${APP}
+    ...    autoGrantPermissions=${AUTO_GRANT_PERMISSIONS}
 
     Wait Until Page Contains    IP da API    30
 
